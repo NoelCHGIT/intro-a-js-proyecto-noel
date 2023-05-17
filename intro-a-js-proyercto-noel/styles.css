@@ -1,6 +1,8 @@
+
 body {
     background-color: #b5d3e7;
 }
+
 .container {
     max-width: 400px;
     margin: 0 auto;
@@ -43,5 +45,80 @@ body {
 
   #loginStatus {
     margin-top: 10px;
+  }
+  
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .logo-box {
+    background-color: #eaeaea;
+  padding: 10px 40px;
+  border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+  .cajero-title {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .user-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    
+  }
+  
+  .user-label {
+    margin-right: 5px;
+    font-weight: bold;
+    
+  }
+  
+  .user-name {
+    font-style: italic;
+  }
+  .user-box {
+    background-color: #eaeaea;
+  padding: 10px 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .transaction-title {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+  .left-boxes {
+    float: left;
+    
+  }
+  
+  .right-boxes {
+    float: right;
   }
   

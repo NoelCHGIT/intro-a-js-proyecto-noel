@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cajero Automático - Página Principal</title>
+  <title>Menú del Cajero Automático</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Cajero Automático</h1>
-    <h2>Bienvenido a la página principal</h2>
-    <div id="userInfo">
-      <h3>Información del usuario:</h3>
-      <p id="username"></p>
-      <p id="accountNumber"></p>
-      <p id="balance"></p>
+  
+  <header class="header-container">
+    <div class="logo-container">
+      <div class="logo-box">
+        <img src="https://images.vexels.com/media/users/3/129288/isolated/preview/52e06e07244a3590366669665ea540e3-icono-de-circulo-de-banco-3.png" alt="Logo del Cajero Automático" class="logo">
+        <h1 class="cajero-title">Cajero Automático</h1>  
+      </div>
     </div>
-    <ul>
-      <li><a href="retiro.html">Retiro</a></li>
-      <li><a href="saldo.html">Consulta de saldo</a></li>
-      <li><a href="transferencia.html">Transferencia</a></li>
-      <li><a href="logout.html">Cerrar sesión</a></li>
-    </ul>
+    <div class="user-container">
+      <div class="user-box">
+        <span class="user-label">Usuario:</span>
+        <span class="user-name">Nombre de Usuario</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <nav>
+      <h2 class="transaction-title">¡HOLA USUARIO! <br> Por favor, Seleccione su transacción</h2>
+      <!-- Resto de los elementos de navegación -->
+    </nav>
+  </section>
+  
+  <div class="content">
+    <div class="left-boxes">
+      <div class="box" onclick="window.location.href='pagina1.html'">
+        <img src="logo1.png" alt="Logo 1">
+        <h3>Nombre 1</h3>
+      </div>
+      <div class="box" onclick="window.location.href='pagina2.html'">
+        <img src="logo2.png" alt="Logo 2">
+        <h3>Nombre 2</h3>
+      </div>
+      <div class="box" onclick="window.location.href='pagina3.html'">
+        <img src="logo3.png" alt="Logo 3">
+        <h3>Nombre 3</h3>
+      </div>
+    </div>
+    <div class="right-boxes">
+      <div class="box" onclick="window.location.href='pagina4.html'">
+        <img src="logo4.png" alt="Logo 4">
+        <h3>Nombre 4</h3>
+      </div>
+      <div class="box" onclick="window.location.href='pagina5.html'">
+        <img src="logo5.png" alt="Logo 5">
+        <h3>Nombre 5</h3>
+      </div>
+      <div class="box" onclick="window.location.href='pagina6.html'">
+        <img src="logo6.png" alt="Logo 6">
+        <h3>Nombre 6</h3>
+      </div>
+    </div>
   </div>
 
-  <script src="script.js"></script>
+  </section>
+
+  <footer>
+    <!-- Contenido del footer -->
+  </footer>
+
 </body>
 </html>
