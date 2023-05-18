@@ -11,7 +11,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   
     // Simulación de inicio de sesión exitoso después de 2 segundos
     setTimeout(function() {
-      if (username === "admin" && password === "admin123") {
+      if (username === "NOEL" && password === "123") {
         loginStatus.textContent = "Inicio de sesión correcto. Redireccionando...";
         loginStatus.style.color = "green";
         setTimeout(function() {

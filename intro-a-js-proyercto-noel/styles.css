@@ -47,7 +47,6 @@ body {
     margin-top: 10px;
   }
   
-
   .logo-container {
     display: flex;
     align-items: center;
@@ -78,6 +77,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
+    padding: 10px;
     
   }
   
@@ -86,14 +86,22 @@ body {
     font-weight: bold;
     
   }
+  .user-balance {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .user-money{
+    margin-bottom: 5px;
+  }
   
   .user-name {
     font-style: italic;
   }
   .user-box {
     background-color: #eaeaea;
-  padding: 10px 40px;
+  padding: 10px 50px;
   border-radius: 5px;
+  flex-direction: column;
   display: flex;
   align-items: center;
 
@@ -139,4 +147,44 @@ body {
     width: calc(30% - 10px);
   }
   
- 
+ .rounded-logo {
+  border-radius: 50%;
+  width: 60px;
+    height: 60px;
+}
+.box:hover {
+    transform: scale(1.015); /* Ajusta el valor según el efecto deseado */
+  }
+  
+section {
+    margin-bottom: 80px; 
+  }
+  header{
+    margin-bottom: 50px; 
+  }
+
+  /* Estilos CSS para el encabezado y las nuevas variables */
+.custom-header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .client-name {
+    font-size: 18px;
+    color: #333;
+  }
+  .client-balance {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  .client-label {
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  .client-money{
+    margin-bottom: 5px;
+  }
+  
