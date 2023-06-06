@@ -119,10 +119,11 @@ body {
     margin-bottom: 10px;
     text-align: center;
   }
+  
 
   .box {
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -139,11 +140,13 @@ body {
   .left-boxes .box {
     display: inline-block;
     width: calc(30% - 10px);
+    margin-right: 10px;
   }
   
   .right-boxes .box {
     display: inline-block;
     width: calc(30% - 10px);
+    margin-right: 10px;
   }
   
  .rounded-logo {
@@ -152,7 +155,8 @@ body {
     height: 60px;
 }
 .box:hover {
-    transform: scale(1.015);
+    transform: scale(1.02);
+    background-color: #8a8a8a;
   }
   
 section {

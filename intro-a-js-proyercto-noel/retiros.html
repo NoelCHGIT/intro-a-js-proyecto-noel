@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -20,13 +21,10 @@
   <section>
     <nav>
       <div class="custom-header">
-          <div class="user-box">
-            <h3>Ingrese la cantidad a retirar</h3>
-            <input type="text" id="withdraw-amount" placeholder="Cantidad a retirar">
-              <button class="withdraw-button" onclick="retirarCantidad()">Retirar</button>
-          </div>
-            </div>
-          </div>
+        <div class="user-box">
+          <h3>Ingrese la cantidad a retirar</h3>
+          <input type="text" id="withdraw-amount" placeholder="Cantidad a retirar">
+          <button class="withdraw-button" onclick="retirarCantidad()">Retirar</button>
         </div>
       </div>
     </nav>
@@ -38,7 +36,6 @@
     </div>
   </div>
   
-
   <script>
     // Función para obtener el saldo almacenado en localStorage
     function obtenerSaldo() {
@@ -60,10 +57,20 @@
     function retirarCantidad() {
       var cantidadT = parseInt(document.getElementById("withdraw-amount").value);
       var saldo = parseInt(obtenerSaldo());
+  
+      if (cantidadT < 10) {
+        alert("La cantidad mínima de retiro es de 10 unidades.");
+        return;
+      }
+  
       var nuevoSaldo = saldo - cantidadT;
   
       if (nuevoSaldo >= 0) {
-        actualizarSaldo(nuevoSaldo);
+        if (nuevoSaldo < 10) {
+          alert("No puedes retirar esa cantidad. El saldo mínimo permitido es de 10 unidades.");
+        } else {
+          actualizarSaldo(nuevoSaldo);
+        }
       } else {
         alert("No tienes suficiente saldo para realizar el retiro");
       }
