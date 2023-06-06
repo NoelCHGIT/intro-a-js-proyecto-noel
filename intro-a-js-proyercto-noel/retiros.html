@@ -11,28 +11,70 @@
         <span class="client-label">Usuario:</span>
         <span class="client-name">NOEL</span>
         <span class="client-balance">Saldo:</span>
-        <span class="client-money">$50.00</span>
+        <span class="client-money">        
+          <input type="text" name="cantidad1" id="c1" value="2000">
+        </span>
       </div>
     </div>
   </header>
   <section>
     <nav>
-      <div class="text-box">
       <div class="custom-header">
-      <div class="user-box">
-        <h3>Ingrese la cantidad a retirar</h3>
-      </div>
-      <div class="withdraw-box">
-        <div class="amount-box">
-          <input type="text" id="withdraw-amount" placeholder="Cantidad a retirar">
-          <button class="withdraw-button" onclick="retirarCantidad()">Retirar</button>
+          <div class="user-box">
+            <h3>Ingrese la cantidad a retirar</h3>
+            <input type="text" id="withdraw-amount" placeholder="Cantidad a retirar">
+              <button class="withdraw-button" onclick="retirarCantidad()">Retirar</button>
+          </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
   </section>
-  
+
+  <div class="back-button-container">
+    <div class="back-button" onclick="window.location.href='principal.html'">
+      <img src="https://departamentos.colegiosansaturio.com/deptomatesweb/4ESO/informatica%20web/temas/Unidad_2/images/atras.png" alt="Volver" class="back-icon">
+    </div>
+  </div>
   
 
+  <script>
+    // Función para obtener el saldo almacenado en localStorage
+    function obtenerSaldo() {
+      var saldo = localStorage.getItem("saldo");
+      if (saldo === null) {
+        // Si no hay saldo almacenado, asigna un valor predeterminado
+        saldo = "2000";
+      }
+      return saldo;
+    }
   
+    // Función para actualizar el saldo en el input y en localStorage
+    function actualizarSaldo(nuevoSaldo) {
+      document.getElementById("c1").value = nuevoSaldo;
+      localStorage.setItem("saldo", nuevoSaldo);
+    }
+  
+    // Función para retirar una cantidad del saldo
+    function retirarCantidad() {
+      var cantidadT = parseInt(document.getElementById("withdraw-amount").value);
+      var saldo = parseInt(obtenerSaldo());
+      var nuevoSaldo = saldo - cantidadT;
+  
+      if (nuevoSaldo >= 0) {
+        actualizarSaldo(nuevoSaldo);
+      } else {
+        alert("No tienes suficiente saldo para realizar el retiro");
+      }
+    }
+  
+    // Al cargar la página, actualiza el saldo en el input
+    window.onload = function() {
+      var saldo = obtenerSaldo();
+      document.getElementById("c1").value = saldo;
+    };
+  </script>
+
 </body>
 </html>

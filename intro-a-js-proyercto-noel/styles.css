@@ -162,12 +162,13 @@ section {
     margin-bottom: 50px; 
   }
 
+  
 .custom-header {
     background-color: #f2f2f2;
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 10px;
   width: 50%;
   }
   
@@ -185,7 +186,46 @@ section {
     margin-right: 5px;
     font-weight: bold;
   }
-  .client-money{
-    margin-bottom: 5px;
+  
+  #c1{
+    width: 200px; 
+    margin: 0 auto 10px; 
+    display: block; 
+    text-align: center;
+  }
+
+  #withdraw-amount {
+    width: 200px; 
+    margin: 0 auto 10px; 
+    display: block; 
+    text-align: center;
   }
   
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-icon {
+    width: 46px;
+    height: 46px;
+    margin-right: 5px;
+  }
+  
+  
+  .back-button:hover {
+    background-color: #45a049;
+  }
+  
+  .back-button-container {
+    display: flex;
+    align-items: center;
+  }
+  
+ 

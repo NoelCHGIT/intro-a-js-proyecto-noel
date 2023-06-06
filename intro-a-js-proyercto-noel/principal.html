@@ -17,7 +17,9 @@
         <span class="user-label">Usuario:</span>
         <span class="user-name">NOEL</span>
         <span class="user-balance">Saldo:</span>
-        <span class="user-money">$50.00</span>
+        <span class="user-money">
+          <input type="text" name= "cantidad1" id="c1" value="2000">
+        </span>
       </div>
     </div>
   </header>
@@ -64,6 +66,15 @@
   <footer>
     <!-- Contenido del footer -->
   </footer>
+  
 
+  <script>
+    window.onload = function() {
+      var saldo = localStorage.getItem('saldo');
+      document.getElementById('c1').value = saldo;
+    }
+  </script>
+
+  
 </body>
 </html>
