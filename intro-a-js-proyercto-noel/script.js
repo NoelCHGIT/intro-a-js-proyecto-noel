@@ -15,7 +15,7 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         loginStatus.textContent = "Inicio de sesión correcto. Redireccionando...";
         loginStatus.style.color = "green";
         setTimeout(function() {
-          window.location.href = "principal.html"; // Redirige a la página principal
+          window.location.href = "index.html"; // Redirige a la página principal
         }, 1000);
       } else {
         loginStatus.textContent = "Contraseña incorrecta. Inténtalo de nuevo.";
